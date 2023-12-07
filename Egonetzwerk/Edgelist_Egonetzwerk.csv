@@ -1,22 +1,22 @@
-id,from,to,weight,relation
-al,Amelie,Kevin,3,love
-al,Amelie,Marlene,3,sister
-al,Amelie,Phillip,3,brother
-ml,Marlene,Frederik,3,love
-ml,Marlene,Amelie,3,sister
-ml,Marlene,Phillip,3,brother
-ka,Kevin,Amelie,3,love
-ka,Kevin,Marlene,1,sister of gf
-ka,Kevin,Frederik,1,bf of sister of gf
-ka,Kevin,Phillip,1,brother of gf
-fa,Frederik,Marlene,3,love
-fa,Frederik,Amelie,2,sister of gf
-fa,Frederik,Phillip,1,brother of gf
-pl,Phillip,Adina,3,love
-pl,Phillip,Marlene,3,sister
-pl,Phillip,Amelie,3,sister
-pl,Phillip,Kevin,1,bf of sister
-pl,Phillip,Frederik,1,bf of sister
-am,Adina,Phillip,3,love
-am,Adina,Marlene,1,sister of bf
-am,Adina,Amelie,1,sister of bf
+id,from,to,weight
+al,Amelie,Kevin,3
+al,Amelie,Marlene,2
+al,Amelie,Phillip,2
+ml,Marlene,Frederik,3
+ml,Marlene,Amelie,2
+ml,Marlene,Phillip,2
+ka,Kevin,Amelie,3
+ka,Kevin,Marlene,1
+ka,Kevin,Frederik,1
+ka,Kevin,Phillip,1
+fa,Frederik,Marlene,3
+fa,Frederik,Amelie,2
+fa,Frederik,Phillip,1
+pl,Phillip,Adina,3
+pl,Phillip,Marlene,2
+pl,Phillip,Amelie,2
+pl,Phillip,Kevin,1
+pl,Phillip,Frederik,1
+am,Adina,Phillip,3
+am,Adina,Marlene,1
+am,Adina,Amelie,1
