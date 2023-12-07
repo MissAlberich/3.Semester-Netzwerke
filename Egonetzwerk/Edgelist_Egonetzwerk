@@ -1,0 +1,14 @@
+id,from,to,weight,relation
+al,al,ka,3,3
+al,al,ml,3,2
+al,al,pl,3,2
+ml,ml,fa,3,3
+ml,ml,al,3,2
+ml,ml,pl,3,2
+ka,ka,al,3,3
+ka,ka,ml,1,2
+ka,ka,fa,1,1
+ka,ka,pl,1,1
+fa,fa,ml,3,3
+fa,fa,al,2,2
+fa,fa,pl,1,2
