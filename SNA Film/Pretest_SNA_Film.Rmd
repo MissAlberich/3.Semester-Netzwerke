@@ -1,0 +1,46 @@
+---
+title: "SNA Film"
+author: "Amelie Lippke"
+date: "2024-01-24"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, setup2}
+
+install.packages
+library(tidyverse)
+library(igraph)
+```
+
+```{r , einlesen}
+# Read Edgelist
+el <- read.csv("https://raw.githubusercontent.com/MissAlberich/3.Semester-Netzwerke/main/SNA%20Film/edgelist_film%20-%20Edgelist.csv", header=T, as.is=T, sep = ",")
+
+# Read Nodelist
+nodes <- read.csv("https://raw.githubusercontent.com/MissAlberich/3.Semester-Netzwerke/main/SNA%20Film/edgelist_film%20-%20Nodelist.csv", header=T, as.is=T, sep = ",")
+
+# creates a matrix from the edgelist
+edgematrix <-as.matrix(el)
+
+# creates an igraph object a (for apollo)
+a<- graph_from_data_frame(d=edgematrix, vertices=nodes, directed=T)
+a
+```
+
+
+```{r , visualisierung, fig.height=9, fig.width=10, message=FALSE, warning=FALSE}
+plot(a,
+     edge.arrow.size=.7,
+     edge.arrow.width = 1.5,
+     vertex.size=10,
+     vertex.color="#e2afa3",
+     edge.color="black",
+     main="Netzwerk Deutscher Filmschauspieler*innen und Agenturen")
+
+```
+
